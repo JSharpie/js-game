@@ -89,6 +89,17 @@ function GenEnemies(enemiesList){
      battle.push(  enemiesList[Math.floor(Math.random()*enemiesList.length)] );
   }
 }
+function Killed(enemy, battle){
+  if(enemy.health <= 0){
+    battle.shift();
+  }
+}
+function Fight(player, enemy){
+  player.health = player.health - enemy.attack();
+  console.log(player.health);
+  enemy.health = enemy.health - player.attack();
+  console.log(enemy.health);
+}
 var foes = new GenEnemies(enemies);
 var player = new Player();
 var enemy = new Enemy(battle[0]);
