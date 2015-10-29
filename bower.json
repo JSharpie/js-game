@@ -1,0 +1,26 @@
+{
+  "name": "js-game",
+  "description": "a simple game made in javascript",
+  "main": "game.js",
+  "moduleType": [],
+  "keywords": [
+    "game",
+    "javascript"
+  ],
+  "authors": [
+    "Jacob Sharp"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
